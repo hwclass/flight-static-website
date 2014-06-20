@@ -8,6 +8,8 @@ define(function (require) {
 
   // var MyComponent = require('component/my_component');
 
+  var Navigation = require('component/navigation');
+
   /**
    * Module exports
    */
@@ -20,6 +22,7 @@ define(function (require) {
 
   function initialize() {
     // MyComponent.attachTo(document);
+    Navigation.attachTo(document.getElementById('navigation'));
   }
 
 });
