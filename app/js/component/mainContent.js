@@ -9,6 +9,10 @@ define(function (require) {
 
   function mainContent() {
 
+    this.init = function () {
+      console.log('navigation:initialized.');
+    }
+
     this.doSomething = function() {
       console.log('mainContent:doSomething');
     }
@@ -21,9 +25,11 @@ define(function (require) {
     * initialize the component
     */
     this.after('initialize', function() {
+      this.init();
       this.on('click', this.doSomething);
       this.on('mouseover', this.doSomethingElse);
     });
+
   }
 
 });
