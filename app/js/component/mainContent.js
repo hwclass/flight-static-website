@@ -10,7 +10,9 @@ define(function (require) {
   function mainContent() {
 
     this.init = function () {
-      console.log('navigation:initialized.');
+      $.get('data/entries.json').success( function (results) { 
+        console.log(results); 
+      });
     }
 
     this.doSomething = function() {
