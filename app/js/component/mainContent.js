@@ -5,16 +5,16 @@ define(function (require) {
   /*
   * define the component
   */
-  return defineComponent(navigation);
+  return defineComponent(mainContent);
 
-  function navigation() {
+  function mainContent() {
 
     this.doSomething = function() {
-      console.log('doSomething');
+      console.log('mainContent:doSomething');
     }
 
     this.doSomethingElse = function() {
-      console.log('doSomethingElse');
+      console.log('mainContent:doSomethingElse');
     }
 
     /*
