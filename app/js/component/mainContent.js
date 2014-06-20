@@ -11,7 +11,7 @@ define(function (require) {
 
     this.init = function () {
       $.get('data/entries.json').success( function (results) { 
-        console.log(results); 
+        
       });
     }
 
